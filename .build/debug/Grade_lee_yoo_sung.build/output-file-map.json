@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/home/lys/Swift/.build/debug/Grade_lee_yoo_sung.build/master.swiftdeps"
+  },
+  "/home/lys/Swift/Sources/main.swift": {
+    "dependencies": "/home/lys/Swift/.build/debug/Grade_lee_yoo_sung.build/main.d",
+    "object": "/home/lys/Swift/.build/debug/Grade_lee_yoo_sung.build/main.swift.o",
+    "swiftmodule": "/home/lys/Swift/.build/debug/Grade_lee_yoo_sung.build/main~partial.swiftmodule",
+    "swift-dependencies": "/home/lys/Swift/.build/debug/Grade_lee_yoo_sung.build/main.swiftdeps"
+  }
+}

@@ -1,0 +1,5 @@
+version: "Swift version 3.1 (swift-3.1-RELEASE)"
+options: "8a85c018b964b672b3d21051d343214b"
+build_time: [549915521, 533614000]
+inputs:
+  "/home/lys/Swift/Sources/main.swift": [549915313, 0]

@@ -1,0 +1,31 @@
+client:
+  name: swift-build
+tools: {}
+targets:
+  "test": ["/home/lys/Swift/.build/debug/Grade_lee_yoo_sung.build/main.swift.o","/home/lys/Swift/.build/debug/Grade_lee_yoo_sung.swiftmodule","/home/lys/Swift/.build/debug/Grade_lee_yoo_sung"]
+  "main": ["/home/lys/Swift/.build/debug/Grade_lee_yoo_sung.build/main.swift.o","/home/lys/Swift/.build/debug/Grade_lee_yoo_sung.swiftmodule","/home/lys/Swift/.build/debug/Grade_lee_yoo_sung"]
+default: "main"
+commands: 
+  "<Grade_lee_yoo_sung.module>":
+    tool: swift-compiler
+    executable: "/opt/swift-3.1/usr/bin/swiftc"
+    module-name: "Grade_lee_yoo_sung"
+    module-output-path: "/home/lys/Swift/.build/debug/Grade_lee_yoo_sung.swiftmodule"
+    inputs: ["/home/lys/Swift/Sources/main.swift"]
+    outputs: ["/home/lys/Swift/.build/debug/Grade_lee_yoo_sung.build/main.swift.o","/home/lys/Swift/.build/debug/Grade_lee_yoo_sung.swiftmodule"]
+    import-paths: ["/home/lys/Swift/.build/debug"]
+    temps-path: "/home/lys/Swift/.build/debug/Grade_lee_yoo_sung.build"
+    objects: ["/home/lys/Swift/.build/debug/Grade_lee_yoo_sung.build/main.swift.o"]
+    other-args: ["-j8","-D","SWIFT_PACKAGE","-Onone","-g","-enable-testing","-module-cache-path","/home/lys/Swift/.build/debug/ModuleCache"]
+    sources: ["/home/lys/Swift/Sources/main.swift"]
+    is-library: false
+    enable-whole-module-optimization: false
+    num-threads: "8"
+
+  "<Grade_lee_yoo_sung.exe>":
+    tool: shell
+    description: "Linking ./.build/debug/Grade_lee_yoo_sung"
+    inputs: ["/home/lys/Swift/.build/debug/Grade_lee_yoo_sung.build/main.swift.o"]
+    outputs: ["/home/lys/Swift/.build/debug/Grade_lee_yoo_sung"]
+    args: ["/opt/swift-3.1/usr/bin/swiftc","-Xlinker","-rpath=$ORIGIN","-g","-L/home/lys/Swift/.build/debug","-o","/home/lys/Swift/.build/debug/Grade_lee_yoo_sung","-emit-executable","/home/lys/Swift/.build/debug/Grade_lee_yoo_sung.build/main.swift.o"]
+
